@@ -12,7 +12,7 @@ jobs:
         run: npm run test
   lint:
     runs-on: ubuntu-22.04
-    needs: test
+    needs: test_my_here
     steps:
       - name: Get repository code
         uses: actions/checkout@v3
