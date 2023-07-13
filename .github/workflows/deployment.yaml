@@ -46,7 +46,7 @@ jobs:
         with:
           path: ~/.npm
           key: node-modules-${{ hashFiles('**/package-lock.json') }}
-             - name: Install dependencies
+      - name: Install dependencies
         run: yarn
       - name: Build application
         run: yarn run build
